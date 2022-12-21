@@ -1,4 +1,4 @@
-class Parser1:
+class Parser:
     def __init__(self, tokens):
         self.tokens = tokens
         self.program = []

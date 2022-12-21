@@ -36,7 +36,8 @@ class Interpreter:
         self.run()
 
     def operator(self,calc):
-        if type(calc) is dict:   
+        if type(calc) is dict:  
+            if calc == {}: return None; 
             print(calc, calc["left"], calc["right"])     
             l = self.calculate(calc["left"])
             r = self.calculate(calc["right"])
@@ -71,5 +72,4 @@ class Interpreter:
             return int(l) * int(r)
         else:
             return
-
 
